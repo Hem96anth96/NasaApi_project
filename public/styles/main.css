@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(33, 37, 41);
+  text-align: center;
+}
+
+.container{
+ background-color: rgba(0, 0, 0, .1);
+
+}
+h1 {
+  background-color: rgba(0, 0, 0, .1);
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+h2 {
+  color: rgb(222, 226, 230);
+  margin-top: 20px;
+}
+
+h3 {
+  color: rgb(222, 226, 230);
+  margin-top: 10px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+input[type="date"] {
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #283593;
+}
+
+div {
+  margin: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+p {
+  font-size: 18px;
+  margin: 20px 0;
+  color: rgb(222, 226, 230);
+}
+
+ol {
+  list-style-position: inside; /* Ensures list numbers are inside the list item */
+}
+
+li {
+  color: rgb(222, 226, 230);
+  margin-bottom: 10px; /* Optional: Add some spacing between list items */
+}

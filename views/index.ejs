@@ -1,0 +1,45 @@
+<%- include("partials/header.ejs") %>
+
+    <h1>Astronomy Picture of the Day</h1>
+
+    <form action="/image" method="POST">
+        <label for="date">Enter a date (YYYY-MM-DD):</label>
+        <input type="date" id="date" name="date" required>
+        <button type="submit">Get Image</button>
+    </form>
+
+    <div>
+
+
+
+        <% if (locals.errormessage) { %>
+
+            <p>
+                <%= errormessage %>
+            </p>
+            <% } else if (locals.theerror) { %>
+
+                <p>An error occurred: <%= theerror %>
+                </p>
+
+                <% } else { %>
+                    <h2>
+                        <%= title %>
+                    </h2>
+                    <h3>
+                        Picture of <%= date%>
+                    </h3>
+                    <img src="<%=image%>" alt="NASA Image">
+
+                    <p>
+                    <%= message %>
+                    <p>
+
+                <% } %>
+
+    </div>
+
+
+
+
+    <%- include("partials/footer.ejs") %>

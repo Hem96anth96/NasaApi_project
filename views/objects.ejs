@@ -1,0 +1,46 @@
+
+<%- include("partials/header.ejs") %>
+
+
+<h1>Near earth objects today</h1>
+
+<div>
+
+    <% if (locals.elements) { %>
+     
+<h2> <%=elements%> elements near by to earth today are below </h2>
+
+<ol>
+    <% objects.forEach(object => { %>
+        <li>
+
+            ID:<%= object.id %>, 
+            Name:<%= object.name %>, 
+            Max Length in Meters: 
+            <%= Math.floor(object.estimated_diameter.meters.estimated_diameter_max) %>,
+            Potentially Hazardous: <%= object.is_potentially_hazardous_asteroid %>
+            
+            
+            
+        </li>
+    <% }); %>
+</ol>
+
+    <% } %>
+
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("partials/footer.ejs") %>
